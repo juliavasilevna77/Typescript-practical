@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>TypeScript Landing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">TS Practical</div>
+      <nav class="nav">
+        <a href="#features">Можливості</a>
+        <a href="#posts">Пости</a>
+        <button class="btn primary" data-open-modal>Звʼязатися</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>Практична робота з TypeScript</h1>
+          <p>Приклад інтерактивного сайту з модальними вікнами, скрол-анімаціями та завантаженням даних.</p>
+          <button class="btn secondary" data-open-modal>Відкрити форму</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Що тут реалізовано</h2>
+        <ul class="features-list">
+          <li>Модальне вікно (відкриття/закриття по кліку)</li>
+          <li>Зміна стилю шапки при скролі</li>
+          <li>Кнопка «наверх»</li>
+          <li>Завантаження даних через fetch з JSONPlaceholder</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="posts" class="section section-alt">
+      <div class="container">
+        <h2>Останні пости (JSONPlaceholder)</h2>
+        <div id="posts-container" class="posts-grid">
+          <!-- Сюди будуть додаватися пости через TypeScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="scrollTopBtn" class="scroll-top-btn">↑</button>
+
+  <!-- Модальне вікно -->
+  <div id="modalBackdrop" class="modal-backdrop">
+    <div class="modal">
+      <button class="modal-close" data-close-modal>×</button>
+      <h2>Звʼязатися з нами</h2>
+      <p>Це приклад модального вікна. Тут може бути форма або будь-який інший контент.</p>
+    </div>
+  </div>
+
+  <script src="dist/main.js" defer></script>
+</body>
+</html>
